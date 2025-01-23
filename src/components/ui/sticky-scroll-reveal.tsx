@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
-import { cn } from "@/utils/cn"
+import { cn } from "@/utils/cn";
 
 export const StickyScroll = ({
   content,
@@ -64,7 +64,8 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-1 0"
+      className="h-[30rem] overflow-y-auto 
+      flex justify-center relative space-x-10 rounded-md p-1 0"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">
